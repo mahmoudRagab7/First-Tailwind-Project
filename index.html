@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <!-- remix icon -->
+    <link
+      href="
+        https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <nav class="container m-auto p-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <img
+            src="./dist/images/Tailwind_CSS_logo.svg.png"
+            alt="Tailwind Logo"
+            width="200px"
+          />
+        </div>
+
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-slate-900 hover:text-slate-300">Portfolio</a>
+          <a href="#" class="text-slate-900 hover:text-slate-300">About</a>
+          <a href="#" class="text-slate-900 hover:text-slate-300">Contact</a>
+          <a href="#" class="text-slate-900 hover:text-slate-300">Social</a>
+          <a
+            href="#"
+            class="bg-orange-500 hover:bg-slate-900 text-white py-2 px-6 rounded-full"
+            >Call Me</a
+          >
+        </div>
+        <button id="mobile-btn" class="md:hidden">
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <div
+          id="mobile-menu"
+          class="absolute flex hidden items-center space-y-4 font-bold flex-col bg-gray-50 py-8 left-6 right-6 drop-shadow-lg border border-gray-300"
+        >
+          <a href="#">Portfolio</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Social</a>
+          <a
+            href="#"
+            class="bg-orange-500 hover:bg-slate-900 text-white py-2 px-6 rounded-full"
+            >Call Me</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div
+        class="container flex flex-col-reverse md:flex-row mx-auto px-6 space-x-6"
+      >
+        <div
+          class="md:w-1/2 flex flex-col justify-center space-y-5 p-6 text-center md:text-left text-slate-900"
+        >
+          <h1 class="font-bold text-3xl md:text-5xl">
+            Rapidly build modern websites without ever leaving your HTML.
+          </h1>
+          <p>
+            A utility-first CSS framework packed with classes like flex, pt-4,
+            text-center and rotate-90 that can be composed to build any design,
+            directly in your markup.
+          </p>
+          <a
+            href="#"
+            class="bg-orange-500 hover:bg-slate-900 text-white py-2 px-6 rounded-full self-center md:self-start"
+            >Call Me</a
+          >
+        </div>
+        <div class="md:w-1/2">
+          <img src="./dist/images/undraw_online_test_re_kyfx.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="author">
+      <div class="container mx-auto my-32 text-center px-4">
+        <h2 class="font-bold text-4xl">"Best practices" don't work.</h2>
+        <p class="max-w-5xl mt-8 mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+          tempore molestiae, ea voluptatibus autem corporis id ex obcaecati quos
+          maxime iure iusto doloremque officiis, numquam dignissimos corrupti,
+          perspiciatis perferendis non!
+        </p>
+
+        <div
+          class="mt-10 flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0"
+        >
+          <div
+            class="md:w-1/3 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center"
+          >
+            <img
+              src="./dist/images/adam.26d0119c.jpg"
+              alt="Adam"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-slate-900">Adam Sandler</h5>
+            <p class="leading-5 text-sm">
+              If I had to recommend a way of getting into programming today, it
+              would be HTML + CSS with @tailwindcss The RoI is just incredible.
+              This responsive demo is just ~21 custom CSS props. The whole thing
+              is mostly built-in tailwind classes and vanilla HTML.
+            </p>
+          </div>
+
+          <div
+            class="md:w-1/3 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center"
+          >
+            <img
+              src="./dist/images/FMrBa87o_400x400.jpg"
+              alt="Debbie"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-slate-900">Debbie O'Brien</h5>
+            <p class="leading-5 text-sm">
+              Thanks Steve will give it a read. Although I am a mega
+              @tailwindcss fan. Have been working with CSS for over ten years
+              and Tailwind just makes my life easier. It is still CSS and you
+              use flex grid etc but just quicker to write and maintain. You
+              should give it a try
+            </p>
+          </div>
+
+          <div
+            class="md:w-1/3 bg-slate-100 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 items-center"
+          >
+            <img
+              src="./dist/images/79mVokZP_400x400.jpg"
+              alt="Ben"
+              class="w-16 rounded-full -mt-12"
+            />
+            <h5 class="font-bold text-lg text-slate-900">Ben Furfie</h5>
+            <p class="leading-5 text-sm">
+              I’ve been writing CSS for over 20 years, and up until 2017, the
+              way I wrote it changed frequently. It’s not a coincidence Tailwind
+              was released the same year. It might look wrong, but spend time
+              with it and you’ll realise semantic CSS was a 20 year mistake.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900">
+      <div
+        class="container mx-auto text-white px-5 py-10 flex flex-col-reverse md:flex-row justify-between space-y-8 md:space-y-0"
+      >
+        <div class="flex flex-col items-center justify-between md:items-start">
+          <div class="text-center mt-6 md:mt-0">
+            Copyright &copy; 2024 All Rights Reserved
+          </div>
+          <div>
+            <img src="./dist/images/logo-dark.png" alt="Logo" class="h-10" />
+          </div>
+          <div class="flex space-x-4">
+            <a href="#"><i class="ri-facebook-box-fill text-2xl"></i></a>
+            <a href="#"><i class="ri-instagram-fill text-2xl"></i></a>
+            <a href="#"><i class="ri-youtube-fill text-2xl"></i></a>
+            <a href="#"><i class="ri-linkedin-fill text-2xl"></i></a>
+            <a href="#"><i class="ri-twitter-fill text-2xl"></i></a>
+          </div>
+        </div>
+
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hove:text-slate-300">Home</a>
+            <a href="#" class="hove:text-slate-300">About</a>
+            <a href="#" class="hove:text-slate-300">Contact</a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a href="#" class="hove:text-slate-300">Imprint</a>
+            <a href="#" class="hove:text-slate-300">Privacy</a>
+            <a href="#" class="hove:text-slate-300">Credits</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <form action="#">
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                placeholder="Subscibe to Newsletter"
+                class="flex-1 py-2 px-6 rounded-full"
+              />
+              <button
+                class="bg-orange-500 hover:bg-slate-500 rounded-full px-4 py-2"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden md:block">
+            Copyright &copy; 2024 All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>
